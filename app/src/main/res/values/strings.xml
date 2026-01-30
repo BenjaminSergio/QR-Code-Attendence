@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Teste</string>
+    <string name="entrar">Entrar</string>
+    <string name="text_cadastro">Criar conta</string>
+    <string name="title_cadastro">Cadastre-se</string>
+    <string name="gerar_qrcode">Gerar QRCode</string>
+    <string name="scanear_qrcode">Scanear QRcode</string>
+    <string name="lista_de_presenca">Lista de Presenca</string>
+    <string name="configuracoes">Configuracoes</string>
+</resources>

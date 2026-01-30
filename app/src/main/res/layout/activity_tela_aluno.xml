@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung"
+    tools:context=".TelaAluno">
+
+    <TextView
+        android:id="@+id/text_bem_vindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem vindo,"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/scanearQRcode"
+        style="@style/BotaoTelaInicio"
+        android:text="@string/scanear_qrcode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_bem_vindo"/>
+
+    <Button
+        android:id="@+id/lista_presenca_aluno"
+        style="@style/BotaoTelaInicio"
+        android:text="@string/lista_de_presenca"
+        app:layout_constraintStart_toStartOf="@+id/scanearQRcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scanearQRcode"/>
+
+    <Button
+        android:id="@+id/configuracoes"
+        style="@style/BotaoTelaInicio"
+        android:text="@string/configuracoes"
+        app:layout_constraintStart_toStartOf="@+id/scanearQRcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lista_presenca_aluno"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
